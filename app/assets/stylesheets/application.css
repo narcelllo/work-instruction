@@ -14,3 +14,6 @@
  *= require_self
  */
 
+#headrt-container {
+    margin: 32px;
+}
