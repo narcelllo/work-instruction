@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  #get 'sessions/new'
+  #resources :sessions
   resources :users
   resources :instructions
+
+  get 'login',   to: 'sessions#new'
+  post 'login',  to: 'sessions#create'
+  delete 'exit',  to: 'sessions#destroy'
 
   root to: 'instructions#index'
 
