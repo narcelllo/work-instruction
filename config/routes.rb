@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #get 'sessions/new'
   #resources :sessions
-  resources :users
+  resources :users 
   resources :instructions
 
   get 'login',   to: 'sessions#new'
